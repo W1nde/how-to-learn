@@ -34,20 +34,21 @@
     line-height: 96px;
     font-size: 102px;
     font-weight: bold;
-    z-index: 4;
+    z-index: 2;
 }
 
 .header__subtitle {
     display: block;
     position: absolute;
     z-index: 2;
-    max-width: 338px;
+    max-width: 730px;
     margin: 0;
     bottom: 30px;
     left: 64px;
     line-height: 25px;
     font-size: 18px;
     font-weight: normal;
+    z-index: 2;
 }
 
 .header__link {
@@ -61,7 +62,7 @@
     height: 608px;
     right: 0;
     bottom: 0;
-    z-index: 3;
+    z-index: 1;
 }
 
 .header__square-pic {
@@ -72,14 +73,13 @@
     color: #2f80ed;
     top: 64px;
     right: 0;
-    z-index: 2;
 }
 
 .two-columns {
     display: flex;
     justify-content: space-between;
     width: 80%;
-    min-width: 784px;
+    margin: auto
 }
 
 .description {
@@ -102,6 +102,7 @@
     width: 80%;
     min-width: 784px;
     margin: 0;
+    min-width: 784px;
 }
 
 .two-columns__paragraph {
@@ -126,8 +127,7 @@
 }
 
 .section-title {
-    display: flex;
-    justify-content: center;
+  text-align: center;
     margin: 0 auto;
     margin-bottom: 20px;
     width: 60%;
@@ -137,8 +137,7 @@
 }
 
 .section-subtitle {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     margin: auto;
     font-weight: normal;
     margin-top: 20px;
@@ -166,7 +165,6 @@
     font-size: 24px;
     font-weight: bold;
     margin: 0;
-    margin-bottom: 20px;
 }
 
 .table__text {
@@ -174,7 +172,7 @@
     font-size: 18px;
     font-weight: normal;
     margin: 0;
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .feynman {
@@ -182,6 +180,7 @@
     margin-top: 100px;
     min-height: 890px;
     background-color: #f2f2f2;
+    padding-top: 100px;
 }
 
 .feynman__title {
@@ -193,7 +192,6 @@
     font-weight: bold;
     z-index: 2;
     margin: 0 auto;
-    padding-top: 100px;
 }
 
 .feynman__subtitle {
@@ -211,8 +209,11 @@
     position: absolute;
     color: #2f80ed;
     text-decoration: none;
-    margin-bottom: 50%;
-    right: 50px;
+    top: 50%;
+    right: 48px;
+    line-height: 51px;
+    font-size: 36px;
+    font-weight: normal;
 }
 
 .feynman__illustration {
@@ -248,17 +249,11 @@
 }
 
 .table__heading_theme_dark {
-    line-height: 1.15;
-    font-size: 24px;
     color: white;
-    margin: 0;
 }
 
 .table__text_theme_dark {
-    line-height: 1.2;
-    font-size: 18px;
     color: white;
-    margin: 0;
 }
 
 .kaufman__triangle {
