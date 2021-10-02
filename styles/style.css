@@ -40,7 +40,6 @@
 .header__subtitle {
     display: block;
     position: absolute;
-    z-index: 2;
     max-width: 730px;
     margin: 0;
     bottom: 30px;
@@ -79,7 +78,7 @@
     display: flex;
     justify-content: space-between;
     width: 80%;
-    margin: auto
+    margin: auto;
 }
 
 .description {
@@ -102,7 +101,6 @@
     width: 80%;
     min-width: 784px;
     margin: 0;
-    min-width: 784px;
 }
 
 .two-columns__paragraph {
