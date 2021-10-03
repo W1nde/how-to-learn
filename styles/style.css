@@ -40,7 +40,7 @@
 .header__subtitle {
     display: block;
     position: absolute;
-    max-width: 730px;
+    max-width: 388px;
     margin: 0;
     bottom: 30px;
     left: 64px;
@@ -125,7 +125,7 @@
 }
 
 .section-title {
-  text-align: center;
+    text-align: center;
     margin: 0 auto;
     margin-bottom: 20px;
     width: 60%;
