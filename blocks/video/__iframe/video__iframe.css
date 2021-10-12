@@ -1,0 +1,7 @@
+.video__iframe:nth-child(odd) {
+  margin-left: auto;
+}
+
+.video__iframe:nth-child(even) {
+margin-right: auto;
+}
