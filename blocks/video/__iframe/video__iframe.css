@@ -1,7 +1,13 @@
+.video__iframe {
+  border: 0;
+  width: 515px;
+  height: 316px;
+}
+
 .video__iframe:nth-child(odd) {
-  margin-left: auto;
+  margin-right: 20px;
 }
 
 .video__iframe:nth-child(even) {
-margin-right: auto;
+  margin-left: 0;
 }

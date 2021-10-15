@@ -1,7 +1,14 @@
 .cards__item {
   list-style-type: none;
   width: 250px;
-  padding-top: 60px;
-  margin: 0 50px 60px 50px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
 
+.cards__item:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.cards__item:nth-child(2), .cards__item:nth-child(3), .cards__item:nth-child(5) {
+  margin-left: 0;
 }
