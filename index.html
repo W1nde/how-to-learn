@@ -4,9 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="vendor/normalize.css">
+  <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="pages/index.css">
   <title>Научиться учиться</title>
 </head>
+
 <body>
   <div class="page">
     <header class="header">
@@ -68,17 +71,17 @@
       <section class="video">
         <h2 class="section-title">Видео нa TED</h2>
         <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
-        <ul class="video__iframes">
-          <li>
-            <iframe  class="video__iframe" src="https://www.youtube.com/embed/5MgBikgcWnY"></iframe>
-          </li>
-          <li class="video__iframe">
-            <iframe  class="video__iframe" src="https://www.youtube.com/embed/arj7oStGLkU"></iframe>
-          </li>
-        </ul>
+        <div class="video__iframes">
+          <div class="video__iframe">
+            <iframe id="ytplayer" type="text/html" width="515" height="316" src="https://www.youtube.com/embed/5MgBikgcWnY" allowfullscreen></iframe>
+          </div>
+          <div class="video__iframe">
+            <iframe id="ytplayer" type="text/html" width="515" height="316" src="https://www.youtube.com/embed/arj7oStGLkU" allowfullscreen></iframe>
+          </div>
+        </div>
       </section>
       <section class="oackley">
-        <article class="two-columns">
+        <div class="two-columns">
           <h2 class="two-columns__brief">История Барбары Оакли.</h2>
           <div class="two-columns__maintext">
             <p class="two-columns__paragraph">С детства Барбаре не давалась математика. Она считала себя законченным гуманитарием,
@@ -87,7 +90,6 @@
               Оказалось, если вам что-то «плохо даётся», ваши добытые трудом знания гораздо глубже, чем у тех, кому всё ясно с первого
               взгляда.</p>
           </div>
-        </article>
       </section>
       <section class="feynman">
         <h2 class="feynman__title">Метод Фейнмана</h2>
@@ -145,7 +147,7 @@
           <p class="khan__quote-author">Джордж Лукас</p>
           <p class="khan__quote-author-subline">Кинорежиссёр, продюсер</p>
           <div class="khan__book-container">
-            <img src="./images/images_sprint-2/khan-book.jpg" class="khan__book-pic" alt="книга">
+            <div class="khan__book-pic"><img src="/images/images_sprint-2/khan-book.jpg" class="khan__book-pic" alt="книга"></div>
             <a class="khan__buy-link link" href="#">Купить книгу &rarr;</a>
           </div>
         </div>
@@ -198,16 +200,6 @@
         </ul>
         <div class="kaufman__triangle rotation"></div>
       </section>
-      <section class="resources">
-        <h2 class="section-title">Полезные ресурсы</h2>
-        <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
-        <ul class="resources__logo-zone">
-            <li class="resources__logo link"><a href="https://arzamas.academy"><img  src="images/images_sprint-2/logo/resources-arzamas.svg" alt="Арзамас"></a></li>
-            <li class="resources__logo link"><a href="https://nplus1.ru"><img src="images/images_sprint-2/logo/resources-n1.svg" alt="Н1"></a></li>
-            <li class="resources__logo link"><a href="https://strelka.com/en/"><img  src="images/images_sprint-2/logo/resources-strelka.svg" alt="Стрелка"></a></li>
-            <li class="resources__logo link"><a href="https://polka.academy"><img  src="images/images_sprint-2/logo/resources-polka.svg" alt="Полка"></a></li>
-        </ul>
-      </section>
     </main>
     <footer class="footer">
       <div class="footer__columns">
@@ -236,6 +228,16 @@
         </div>
       </div>
     </footer>
+    <section class="resources">
+      <h2 class="section-title">Полезные ресурсы</h2>
+      <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
+      <div class="resources__logo-zone">
+          <a href="https://arzamas.academy" class="resources__logo link"><img class="resources__logo" src="images/images_sprint-2/logo/resources-arzamas.svg" alt="Арзамас"></a>
+          <a href="https://nplus1.ru" class="resources__logo link"><img class="resources__logo" src="images/images_sprint-2/logo/resources-n1.svg" alt="Н1"></a>
+          <a href="https://strelka.com/en/" class="resources__logo link"><img class="resources__logo" src="images/images_sprint-2/logo/resources-strelka.svg" alt="Стрелка"></a>
+          <a href="https://polka.academy" class="resources__logo link"><img class="resources__logo" src="images/images_sprint-2/logo/resources-polka.svg" alt="Полка"></a>
+      </div>
+    </section>
   </div>
 </body>
 </html>
